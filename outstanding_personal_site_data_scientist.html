@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ali — Early-Career Data Scientist</title>
+  <meta name="description" content="Ali — Data Scientist (University of Tehran). Portfolio, projects, skills, contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent1:#7c3aed; --accent2:#06b6d4; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --glass-2: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto;direction:rtl;background:linear-gradient(180deg,#061028 0%, #071226 50%, #071226 100%);color:#e6eef6}
+    a{color:inherit;text-decoration:none}
+    header{max-width:1100px;margin:28px auto;display:flex;align-items:center;justify-content:space-between;padding:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    .nav{display:flex;gap:14px;align-items:center}
+    .nav a{padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600}
+    .container{max-width:1100px;margin:14px auto;padding:22px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .card{background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.6));padding:26px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(3,6,18,0.6);backdrop-filter: blur(6px)}
+    h1{margin:0 0 8px 0;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 18px 0}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer;border:none}
+    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .profile-card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+    .avatar{width:160px;height:160px;border-radius:20px;background:linear-gradient(180deg,#11213a, #0e1522);display:flex;align-items:center;justify-content:center;font-size:48px;color:var(--accent2);font-weight:800}
+    .skill-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .badge{padding:8px 10px;border-radius:10px;background:var(--glass);color:var(--muted);font-weight:600}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .projects .project{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid var(--glass-2)}
+
+    .timeline{display:flex;flex-direction:column;gap:8px}
+    .timeline .item{display:flex;gap:12px;align-items:flex-start}
+    .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(90deg,var(--accent1),var(--accent2));margin-top:6px}
+    footer{max-width:1100px;margin:40px auto;padding:12px;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media (max-width:1000px){.hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .profile-card{flex-direction:row;align-items:center;text-align:left}}
+    @media (max-width:520px){header{padding:8px}.logo{width:48px;height:48px}.avatar{width:120px;height:120px}}
+
+    /* subtle animations */
+    .float{animation:floaty 6s ease-in-out infinite}
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">A</div>
+      <div>
+        <div style="font-weight:800">Ali</div>
+        <div style="color:var(--muted);font-size:13px">Early‑career Data Scientist — University of Tehran</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#about">درباره</a>
+      <a href="#projects">پروژه‌ها</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>سلام — من علی هستم</h1>
+        <p class="lead">دانشمند داده تازه‌کار با مدرک دانشگاه تهران. علاقه‌مند به تحلیل داده، یادگیری ماشین، و ساخت مدل‌های قابل توضیح. هدفم ورود به پروژه‌های کاربردی و یادگیری سریع در محیط‌های واقعی است.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact">درخواست همکاری</a>
+          <a class="btn btn-ghost" href="/assets/Ali_Resume.pdf" download>دریافت رزومه (PDF)</a>
+        </div>
+
+        <div style="margin-top:18px;color:var(--muted);font-size:14px">
+          <strong>نکته برای کارفرما:</strong> دانش قوی در پایتون، آمار پایه‌ای و آمادهٔ یادگیری تکنیک‌های پیشرفته برای حل مسائل واقعی.
+        </div>
+
+        <div class="grid" style="margin-top:20px">
+          <div class="card" style="padding:16px">
+            <h3 style="margin:0 0 8px 0">مهارت‌های فنی</h3>
+            <div style="color:var(--muted);font-size:14px">Python · pandas · NumPy · scikit‑learn · SQL · matplotlib · seaborn · Jupyter · Git</div>
+          </div>
+          <div class="card" style="padding:16px">
+            <h3 style="margin:0 0 8px 0">تمرکز</h3>
+            <div style="color:var(--muted);font-size:14px">تحلیل داده، پاک‌سازی داده، مدل‌سازی پیش‌بینی، اعتبارسنجی مدل، مصورسازی داده</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-card card float">
+        <div class="avatar">ع</div>
+        <div>
+          <div style="font-weight:800">علی</div>
+          <div style="color:var(--muted);font-size:13px">Data Scientist (BSc — University of Tehran)</div>
+          <div style="margin-top:10px" class="skill-badges">
+            <div class="badge">Python</div>
+            <div class="badge">pandas</div>
+            <div class="badge">SQL</div>
+            <div class="badge">ML</div>
+            <div class="badge">Data Viz</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" style="margin-top:22px">
+      <div class="card">
+        <h2>درباره من</h2>
+        <p style="color:var(--muted)">فارغ‌التحصیل از دانشگاه تهران با گرایش علوم داده. اگرچه سابقهٔ کاری طولانی ندارم، پروژه‌های شخصی و نمونه‌کارهایی دارم که نشان‌دهندهٔ توانایی حل مسئله و مهارت‌های فنی‌ام هستند. آمادهٔ همکاری در پروژه‌های تحقیقاتی و عملیاتی هستم.</p>
+
+        <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+          <div class="card" style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 8px 0">آموزش</h4>
+            <div class="timeline">
+              <div class="item"><div class="dot"></div><div><strong>دانشگاه تهران</strong><div style="color:var(--muted);font-size:13px">لیسانس — علوم داده</div></div></div>
+            </div>
+          </div>
+          <div class="card" style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 8px 0">در حال یادگیری</h4>
+            <div style="color:var(--muted);font-size:14px">Deep Learning · Model Deployment · Docker · Cloud Basics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:22px" class="projects">
+      <h2 style="margin-bottom:12px">پروژه‌ها</h2>
+      <div class="grid">
+        <div class="project card">
+          <h3 style="margin:0">پروژه نمونه ۱ — تحلیل داده</h3>
+          <div style="color:var(--muted);font-size:13px">توضیح کوتاه پروژه: پاک‌سازی، تحلیل اکتشافی و مصورسازی مجموعه داده‌ای واقعی. نتایج شامل الگوهای قابل تفسیر و داشبورد نمونه است.</div>
+          <div style="margin-top:8px;display:flex;gap:8px">
+            <a class="btn btn-ghost" href="#">مشاهده کد</a>
+            <a class="btn btn-ghost" href="#">گزارش</a>
+          </div>
+        </div>
+
+        <div class="project card">
+          <h3 style="margin:0">پروژه نمونه ۲ — مدل پیش‌بینی</h3>
+          <div style="color:var(--muted);font-size:13px">توضیح کوتاه پروژه: پیاده‌سازی و اعتبارسنجی چند مدل‌ پیش‌بینی، گزارش معیارها و شرح فرآیند انتخاب ویژگی.</div>
+          <div style="margin-top:8px;display:flex;gap:8px">
+            <a class="btn btn-ghost" href="#">مشاهده کد</a>
+            <a class="btn btn-ghost" href="#">نتایج</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;color:var(--muted);font-size:13px">نکته: اگر می‌خوای، من می‌تونم این بخش‌ها رو با لینک‌های GitHub واقعی و تصاویر داشبورد پر کنم — فقط پروژه‌ها یا ریپازیتوری‌هات رو بهم بدی.</div>
+    </section>
+
+    <section id="skills" style="margin-top:22px">
+      <div class="card">
+        <h2>مهارت‌ها</h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+          <div class="badge">Python</div>
+          <div class="badge">pandas</div>
+          <div class="badge">scikit‑learn</div>
+          <div class="badge">SQL</div>
+          <div class="badge">Jupyter</div>
+          <div class="badge">Data Viz</div>
+          <div class="badge">Git</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <div class="card">
+        <h2>تماس</h2>
+        <p style="color:var(--muted)">مشتاق گفتگو دربارهٔ فرصت‌ها هستم. برای تماس مستقیم از راه‌های زیر استفاده کن:</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <a class="btn btn-primary" href="mailto:your-email@example.com">ارسال ایمیل</a>
+          <a class="btn btn-ghost" href="#">مشاهده GitHub</a>
+        </div>
+
+        <form style="margin-top:14px;display:flex;gap:8px;flex-direction:column" onsubmit="alert('فرم ارسال شد — برای نمونه فقط نمایش داده می‌شود.');return false;">
+          <input placeholder="نام" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <input placeholder="ایمیل" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <textarea placeholder="پیام" rows="4" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+          <button class="btn btn-primary" type="submit">ارسال</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    ساخته‌شده با ♥ — اگر خواستی این صفحه را شخصی‌سازی کنم (لینک GitHub، تصاویر پروژه، رزومه)، فقط پروژه‌ها/ریپازیتوری‌ها و ایمیلت رو بده.
+  </footer>
+</body>
+</html>
